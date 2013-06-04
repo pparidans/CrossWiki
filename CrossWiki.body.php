@@ -16,6 +16,7 @@ class ExtCrossWiki {
 			'action' => "login",
 			'lgname' => $wgCrossWikiSettings['username'],
 			'lgpassword' => $wgCrossWikiSettings['password'],
+			'lgdomain' => $wgCrossWikiSettings['domain'],
 			'format' => "php",
 		);
 
