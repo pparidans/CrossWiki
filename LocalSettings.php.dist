@@ -6,5 +6,6 @@ $wgCrossWikiSettings = array(
 	"url" => "<parent_wiki_root_url>",
 	"username" => "<username>",
 	"password" => "<password>",
-	"domain" => "<ad_domain>"
+	"domain" => "<ad_domain>",
+	"sslVerification" => true
 );

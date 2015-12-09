@@ -23,6 +23,7 @@ class ExtCrossWiki {
 		$cookiePlugin = new CookiePlugin(new ArrayCookieJar());
 		$client = new Client();
 		$client->addSubscriber($cookiePlugin);
+		$client->setSslVerification($wgCrossWikiSettings['sslVerification']);
 
 		$login_request = $client->post($login_url, null, $login_vars);
 		$response = unserialize($login_request->send()->getBody());
